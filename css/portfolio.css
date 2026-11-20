@@ -1,0 +1,42 @@
+/* ==========================================================
+   Britz Advertiser — portfolio page
+   ========================================================== */
+
+.case {
+  display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(32px, 5vw, 64px); align-items: center;
+  padding-bottom: clamp(56px, 8vw, 96px);
+  margin-bottom: clamp(56px, 8vw, 96px);
+  border-bottom: 1px solid var(--line);
+}
+.case-shot {
+  display: block; border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 48px -28px rgba(13, 19, 48, .35);
+  transition: transform .2s;
+}
+.case-shot:hover { transform: translateY(-3px); }
+.case-shot img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: top; }
+
+.case-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.case-meta span { font-size: 0.82rem; font-weight: 700; color: var(--ink-soft); background: var(--paper-2); border: 1px solid var(--line); padding: 5px 12px; border-radius: 999px; }
+.case-body p { color: var(--ink-soft); }
+
+.case-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0 32px; padding: 20px 0; border-block: 1px solid var(--line); }
+.case-facts dt { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.case-facts dd { margin: 0; font-weight: 700; font-size: 0.97rem; }
+
+.case-next { display: block; border: 0; margin: 0; padding: 0; }
+.case-next-inner {
+  border: 2px dashed var(--line); border-radius: var(--radius);
+  padding: clamp(32px, 5vw, 56px);
+  text-align: center;
+}
+.case-next-inner h2 { margin-inline: auto; max-width: 20ch; }
+.case-next-inner p:not(.eyebrow) { color: var(--muted); max-width: 52ch; margin: 0 auto 26px; }
+
+@media (max-width: 860px) {
+  .case { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .case-facts { grid-template-columns: 1fr; gap: 12px; }
+}

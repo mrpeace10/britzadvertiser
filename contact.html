@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Britz Advertiser</title>
+  <meta name="description" content="Get in touch with Britz Advertiser for a free chat and a fixed quote on your website, hosting or marketing.">
+  <link rel="icon" href="assets/img/britz-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Britz Advertiser home">
+        <img src="assets/img/britz-mark.png" alt="" width="40" height="30">
+        <span>Britz<b>Advertiser</b></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Our work</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="btn btn-primary btn-sm" href="contact.html">Get a free quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section contact">
+      <div class="wrap contact-grid">
+        <div class="contact-intro">
+          <p class="eyebrow">Contact</p>
+          <h1>Tell us about your business.</h1>
+          <p class="lead">A few lines is plenty. We'll reply with some honest thoughts and, if you'd like one, a fixed quote. There's no charge and no obligation.</p>
+
+          <dl class="contact-info">
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:britzadvertiser@gmail.com">britzadvertiser@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+447367883990">07367 883990</a></dd>
+            </div>
+            <div>
+              <dt>Area</dt>
+              <!-- TODO: confirm the area you cover -->
+              <dd>Rothwell, Kettering and across Northamptonshire</dd>
+            </div>
+            <div>
+              <dt>Web</dt>
+              <dd><a href="https://www.britzadvertiser.co.uk">www.britzadvertiser.co.uk</a></dd>
+            </div>
+          </dl>
+          <p class="contact-small">Advertising is a 30-day rolling contract paid by Direct Debit. <a href="terms.html">Read our terms</a>.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="business">Business name <span class="opt">(optional)</span></label>
+              <input id="business" name="business" type="text" autocomplete="organization">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span class="opt">(optional)</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+
+          <fieldset class="field">
+            <legend>What are you interested in?</legend>
+            <div class="chips">
+              <label><input type="checkbox" name="interest" value="Website design"><span>Website design</span></label>
+              <label><input type="checkbox" name="interest" value="Web hosting"><span>Web hosting</span></label>
+              <label><input type="checkbox" name="interest" value="Google & local search"><span>Google &amp; local search</span></label>
+              <label><input type="checkbox" name="interest" value="Social media & ads"><span>Social media &amp; ads</span></label>
+              <label><input type="checkbox" name="interest" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What does your business do, and what would you like help with?" required></textarea>
+          </div>
+
+          <p class="form-error" id="form-error" role="alert" hidden>Please add your name, a valid email and a short message.</p>
+
+          <button class="btn btn-primary" type="submit">Send message <span class="arrow" aria-hidden="true">&rarr;</span></button>
+          <p class="form-note">This opens your email app with your message filled in, ready to send.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/img/britz-mark.png" alt="" width="40" height="30">
+            <span>Britz<b>Advertiser</b></span>
+          </a>
+          <p>Your local digital marketing company. Websites, hosting, Google and social media for small businesses.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Our work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms &amp; conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#websites">Website design</a></li>
+            <li><a href="services.html#hosting">Web hosting</a></li>
+            <li><a href="services.html#local-seo">Local search</a></li>
+            <li><a href="services.html#social">Social media</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="tel:+447367883990">07367 883990</a></li>
+            <li><a href="mailto:britzadvertiser@gmail.com">britzadvertiser@gmail.com</a></li>
+            <li><a href="contact.html">Send us a message</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Britz Advertiser. Operated by Laser Marketing Ltd, a UK registered company.</span>
+        <span><a href="terms.html">Terms</a> &middot; britzadvertiser.co.uk</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* ==========================================================
+   Britz Advertiser — contact page
+   ========================================================== */
+
+.contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(36px, 6vw, 88px); align-items: start; }
+.contact-intro h1 { font-size: clamp(2.1rem, 4.4vw, 3.1rem); max-width: 14ch; }
+
+.contact-info { margin: 36px 0 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+.contact-info div { padding: 18px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 90px 1fr; gap: 16px; }
+.contact-info dt { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.contact-info dd { margin: 0; font-weight: 600; }
+
+.contact-form {
+  background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: clamp(24px, 4vw, 40px);
+}
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.field { margin: 0 0 20px; border: 0; padding: 0; min-width: 0; }
+.field label, .field legend { display: block; font-weight: 700; font-size: 0.93rem; margin-bottom: 7px; padding: 0; }
+.opt { font-weight: 500; color: var(--muted); }
+
+.field input, .field textarea {
+  width: 100%;
+  font: 500 1rem var(--font-body); color: var(--ink);
+  background: #fff;
+  border: 1.5px solid #cfd5e3; border-radius: var(--radius-sm);
+  padding: 13px 14px;
+  transition: border-color .15s, box-shadow .15s;
+}
+.field textarea { resize: vertical; min-height: 130px; }
+.field input:focus, .field textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(29, 99, 242, .15); }
+.field input[aria-invalid="true"], .field textarea[aria-invalid="true"] { border-color: #c8362b; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips label { margin: 0; font-weight: 600; font-size: 0.92rem; cursor: pointer; }
+.chips label { position: relative; }
+.chips input { position: absolute; inset: 0; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.chips span {
+  display: inline-block; padding: 8px 14px; border-radius: 999px;
+  background: #fff; border: 1.5px solid #cfd5e3;
+  transition: background-color .15s, border-color .15s, color .15s;
+}
+.chips input:checked + span { background: var(--ink); border-color: var(--ink); color: #fff; }
+.chips input:focus-visible + span { outline: 3px solid var(--cyan); outline-offset: 2px; }
+
+.form-error { color: #b32a20; font-weight: 600; font-size: 0.95rem; }
+.form-note { font-size: 0.85rem; color: var(--muted); margin: 14px 0 0; }
+
+@media (max-width: 860px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .field-row { grid-template-columns: 1fr; gap: 0; }
+}
+
+.contact-small { font-size: 0.92rem; color: var(--muted); margin-top: 20px; }
